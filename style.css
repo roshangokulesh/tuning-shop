@@ -1,0 +1,147 @@
+ @import url('https://fonts.cdnfonts.com/css/winob');
+ @import url('https://fonts.cdnfonts.com/css/base45');
+ 
+ 
+ * {
+            margin: 0px 0px;
+            padding: 0px;
+
+        }
+
+        body {
+           
+            background-image: url("./Car-engine-modifications.jpg");
+            background-repeat: no-repeat;
+            background-size: 1225px 600px;
+        }
+        
+        .d1 {
+            background-color: rgba(14, 13, 13, 0.483);
+            color: rgb(255, 1, 1);
+            box-shadow: 5px 5px 20px;
+            height: 70px;
+            margin: 10px 10px;
+            width: 900px;
+            border-radius: 45px;
+            transition-property: width,margin-left;
+            transition-duration: 0.6s;
+            margin-left: 150px;
+
+        }
+        .d1:hover{
+            width:1050px ;
+            margin-left: 90px;
+        }
+
+        ul {
+            display: flex;
+            padding-top: 20px;
+            list-style: none;
+            justify-content: space-between;
+            font-size: x-large;
+            text-shadow: 2px 2px 13px white;
+        }
+
+        .space {
+            margin-left: 400px;
+        }
+
+        .spacer {
+            margin-right: 20px;
+        }
+
+        .g17 {
+            text-shadow: none;
+            font-size: 180%;
+            font-weight: 1000;
+            font-family: fantasy;
+            margin-left: 40px;
+        }
+
+        a {
+            color: white;
+            text-decoration-line: none;
+
+        }
+
+        a:hover {
+            color: red;
+            transition: 0.5s;
+        }
+
+        .g17:hover {
+            color: white;
+        }
+
+        h2 {
+            color: rgb(253, 252, 252);
+            margin: 400px 280px;
+            font-size: xxx-large;
+            font-family: 'winob', sans-serif;
+                                                
+
+        }
+
+        .abt {
+            margin-top: -350px;
+            padding-left: 600px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration:  5px underline;
+            font-size: 500%;
+            color: red;
+
+        }
+
+        .d3 {
+            height: 400px;
+            width: 1219px;
+            background-color:white;
+            margin-top: 500px;
+            margin-bottom: 100px;
+        }
+        .pas{
+            margin-left: 610px;
+            margin-top: 30px;
+            font-size: large;
+            font-weight: lighter;
+        }
+        .bmw{
+            display: flex;
+            margin-left: 0px;
+            margin-top: -250px;
+            height:350px;
+            width:300px;
+            transition-property:width,height ;
+            transition-duration: 0.5s;
+           
+        }
+        .d4{
+           box-shadow: 12px 15px 25px rgba(245, 8, 8, 0.667);
+           width: 300px;
+           margin-left: 190px;
+           transition-property: box-shadow;
+           transition-duration: 0.5s;
+        
+        }
+        .d4:hover{
+            box-shadow:  55px 23px 25px rgba(245, 8, 8, 0.667) ;
+        }
+        .bmw:hover{
+            width:350px;
+            height:400px;
+            
+        }
+        .d5{
+            padding:70px 520px;
+            font-family: 'Base45', sans-serif;
+                                                
+        }
+        .d6{
+            margin-left: 50px;
+            border: 2px solid black;
+            width: 300px;
+            text-align: center;
+            align-items: center;
+            padding: 10px 5px;
+            border-radius: 10%;
+        } 
