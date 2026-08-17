@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
     <link href="https://fonts.cdnfonts.com/css/winob" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/base45" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
                 
                 
     <style>
@@ -45,18 +47,35 @@
     <!-- product -->
     <div class="d5"><h1>PRODUCT</h1></div>
 
+    <div data-aos="zoom-in">
     <div class="d6">
         <div class="card" style="width: 18rem;">
   <img src="./bmw.jpg" class="card-img-top" alt="..." height="250" width="230">
   <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <p>Spoiler</p>
+     <button class="button1" id="b1" onclick="minus()">-</button>
+     <input id="a1" type="number" value="1" style="text-align: center;">
+        <button class="button2" id="b2" onclick="plus()">+</button>
   </div>
 </div>
     </div>
+    </div>
+   
     <br><br><br>
 </body>
 
 <script>
+
+  AOS.init();   
+
+   function minus(){
+        var value=document.getElementById(a1);
+        a1.value=Number(a1.value)-1;
+    }
+    function plus(){
+        var value=document.getElementById(a1);
+        a1.value=Number(a1.value)+1;
+    } 
 
 </script>
 
