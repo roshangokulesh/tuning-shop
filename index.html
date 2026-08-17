@@ -36,7 +36,7 @@
         </div>
    
         <!-- about -->
-<div data-aos="fade-left">
+<div data-aos="fade-right">
     <div class="d3">
         <div class="d4">
         <img class="bmw" src="./store.jpg" alt="">
@@ -88,6 +88,7 @@
      </div>
     <br>
     <!-- 4rth pr -->
+     <div data-aos="zoom-in" class="rowproduct2">
       <div class="d7">
         <div class="card" style="width: 18rem;">
   <img src="./exhaust.webp" class="card-img-top" alt="..." height="250" width="230">
@@ -99,8 +100,39 @@
   </div>
 </div>
     </div>  
+    <!-- 5th pr -->
+      <div class="d7">
+        <div class="card" style="width: 18rem;">
+  <img src="./wrap.webp" class="card-img-top" alt="..." height="250" width="230">
+  <div class="card-body">
+    <p>Wrap</p>
+     <button class="button1" id="b1" onclick="minus4()">-</button>
+     <input id="a5" type="number" value="1" style="text-align: center;">
+        <button class="button2" id="b2" onclick="plus4()">+</button>
+  </div>
+</div>
+    </div>  
+    <!-- 6th pr -->
+     <div class="d7">
+        <div class="card" style="width: 18rem;">
+  <img src="./tint.webp" class="card-img-top" alt="..." height="250" width="230">
+  <div class="card-body">
+    <p>Tint</p>
+     <button class="button1" id="b1" onclick="minus5()">-</button>
+     <input id="a6" type="number" value="1" style="text-align: center;">
+        <button class="button2" id="b2" onclick="plus5()">+</button>
+  </div>
+</div>
+    </div>  
 
-    <br><br><br>
+
+
+
+
+
+    </div>
+
+    <br><br>
 </body>
 
 <script>
@@ -140,6 +172,25 @@
         var value=document.getElementById(a4);
         a4.value=Number(a4.value)+1;
     } 
+    // 5thpr
+    function minus4(){
+        var value=document.getElementById(a5);
+        a5.value=Number(a5.value)-1;
+    }
+    function plus4(){
+        var value=document.getElementById(a5);
+        a5.value=Number(a5.value)+1;
+    } 
+    // 6thpr
+    function minus5(){
+        var value=document.getElementById(a6);
+        a6.value=Number(a6.value)-1;
+    }
+    function plus5(){
+        var value=document.getElementById(a6);
+        a6.value=Number(a6.value)+1;
+    } 
+
 
 </script>
 
