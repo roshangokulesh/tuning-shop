@@ -168,4 +168,48 @@
         } 
         .rowproduct2{
               display:inline-flex;
+              margin-bottom: 50px;
+        }
+        /* contact */
+         .div17{
+            background-color: rgba(29, 1, 1, 0.75);
+            width: 1219px;
+            height: 480px;
+        }
+        .footer{
+            color:orange;
+            padding-left: 20px;
+            padding-top: 430px;
+            font-size: xx-large;
+        }
+        .div18{
+            display: flex;
+             font-family: 'Chelsea', sans-serif;
+            
+        }
+        .personal{
+            margin-left: 400px;
+            margin-top: -320px;
+            color: white;
+        }
+        .privacy{
+            padding: 0px;
+            border: none;
+            color: white;
+            
+        }
+        .statement{
+            padding-left:50px;
+            border: none;
+            color: white;   
+        }
+        .div19{
+            display: flex;
+             font-family: 'Chelsea', sans-serif;
+            
+        }
+        .apps{
+            margin-left: 100px;
+            margin-top: -320px;
+            color: white;
         }
