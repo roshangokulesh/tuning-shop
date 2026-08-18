@@ -10,6 +10,89 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
+         @import url('https://fonts.cdnfonts.com/css/winob');
+         @import url('https://fonts.cdnfonts.com/css/base45');
+ 
+ 
+ * {
+            margin: 0px 0px;
+            padding: 0px;
+
+        }
+        /* header  navbar */
+         body {
+           
+            background-image: url("./Car-engine-modifications.jpg");
+            background-repeat: no-repeat;
+            background-size: 1225px 600px;
+        }
+        
+        .d1 {
+            background-color: rgba(14, 13, 13, 0.483);
+            color: rgb(255, 1, 1);
+            box-shadow: 5px 5px 20px;
+            height: 70px;
+            margin: 10px 10px;
+            width: 900px;
+            border-radius: 45px;
+            transition-property: width,margin-left;
+            transition-duration: 0.6s;
+            margin-left: 150px;
+
+        }
+        .d1:hover{
+            width:1050px ;
+            margin-left: 90px;
+        }
+
+        ul {
+            display: flex;
+            padding-top: 20px;
+            list-style: none;
+            justify-content: space-between;
+            font-size: x-large;
+            text-shadow: 2px 2px 13px white;
+        }
+
+        .space {
+            margin-left: 400px;
+        }
+
+        .spacer {
+            margin-right: 20px;
+        }
+
+        .g17 {
+            text-shadow: none;
+            font-size: 180%;
+            font-weight: 1000;
+            font-family: fantasy;
+            margin-left: 40px;
+        }
+
+        a {
+            color: white;
+            text-decoration-line: none;
+
+        }
+
+        a:hover {
+            color: red;
+            transition: 0.5s;
+        }
+
+        .g17:hover {
+            color: white;
+        }
+
+        h2 {
+            color: rgb(253, 252, 252);
+            margin: 400px 280px;
+            font-size: xxx-large;
+            font-family: 'winob', sans-serif;
+                                                
+
+        }
         .abt {
             margin-top: -350px;
             padding-left: 600px;
@@ -21,6 +104,7 @@
         }
 
         .d3 {
+            position: relative;
             height: 400px;
             width: 1219px;
             background-color:white;
@@ -36,7 +120,7 @@
         .bmw{
             display: flex;
             margin-left: 0px;
-            margin-top: -250px;
+            margin-top: 0px;
             height:350px;
             width:300px;
             transition-property:width,height ;
@@ -44,6 +128,7 @@
            
         }
         .d4{
+           position: absolute;
            box-shadow: 12px 15px 25px rgba(245, 8, 8, 0.667);
            width: 300px;
            margin-left: 190px;
@@ -62,6 +147,21 @@
     </style>
 </head>
 <body>
+     <header>
+    <div class="d1">
+        <ul>
+            <li><a class="g17" href="#">G17</a></li>
+            <li><a class="space" href="">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a class="spacer" href="">Contact</a></li>
+        </ul>
+         </div>
+         </header>
+        <div class="d2">
+            <h2>HIGH LEVEL GADGETS</h2>
+        </div>
+        <!-- about -->
     <div data-aos="fade-right">
     <div class="d3">
         <div class="d4">
@@ -72,4 +172,7 @@
     </div>
     </div>
 </body>
+<script>
+     AOS.init();   
+</script>
 </html>
