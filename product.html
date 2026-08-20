@@ -1,19 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G17 Garage</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./logo.jpg" type="image/x-icon">
-    <link href="https://fonts.cdnfonts.com/css/winob" rel="stylesheet">
+    <title>Document</title>
+     <link href="https://fonts.cdnfonts.com/css/winob" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/base45" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            
-</head>
+    <style>
+         @import url('https://fonts.cdnfonts.com/css/winob');
+ @import url('https://fonts.cdnfonts.com/css/base45');
+ 
+ 
+ * {
+            margin: 0px 0px;
+            padding: 0px;
 
+        }
+
+        body {
+           
+            background-image: url("./Car-engine-modifications.jpg");
+            background-repeat: no-repeat;
+            background-size: 1225px 600px;
+        }
+        
+        .d1 {
+            background-color: rgba(14, 13, 13, 0.483);
+            color: rgb(255, 1, 1);
+            box-shadow: 5px 5px 20px;
+            height: 70px;
+            margin: 10px 10px;
+            width: 900px;
+            border-radius: 45px;
+            transition-property: width,margin-left;
+            transition-duration: 0.6s;
+            margin-left: 150px;
+
+        }
+        .d1:hover{
+            width:1050px ;
+            margin-left: 90px;
+        }
+
+        ul {
+            display: flex;
+            padding-top: 20px;
+            list-style: none;
+            justify-content: space-between;
+            font-size: x-large;
+            text-shadow: 2px 2px 13px white;
+        }
+
+        .space {
+            margin-left: 400px;
+        }
+
+        .spacer {
+            margin-right: 20px;
+        }
+
+        .g17 {
+            text-shadow: none;
+            font-size: 180%;
+            font-weight: 1000;
+            font-family: fantasy;
+            margin-left: 40px;
+        }
+
+        a {
+            color: white;
+            text-decoration-line: none;
+
+        }
+
+        a:hover {
+            color: red;
+            transition: 0.5s;
+        }
+
+        .g17:hover {
+            color: white;
+        }
+
+        h2 {
+            color: rgb(253, 252, 252);
+            margin: 400px 280px;
+            font-size: xxx-large;
+            font-family: 'winob', sans-serif;
+                                                
+
+        }
+        /* product */
+         .d5{
+            padding:70px 520px;
+            font-family: 'Base45', sans-serif;
+            margin-top: -300px;
+                                                
+        }
+        .d6{
+            margin-left: 70px;
+            border: 5px solid rgba(0, 0, 0, 0.289);
+            width: 290px;
+            text-align: center;
+            align-items: center;
+            padding: 30px 10px;
+            border-radius: 10%;
+            box-shadow: 2px 2px 10px;
+        } 
+        .button1{
+            padding: 5px 5px;
+        }
+        .button2{
+            padding: 5px 5px;
+        }
+        .product{
+            display:inline-flex;
+            
+        }
+         .d7{
+            margin-top: 50px;
+            margin-left: 70px;
+            border: 5px solid rgba(0, 0, 0, 0.289);
+            width: 290px;
+            text-align: center;
+            align-items: center;
+            padding: 30px 10px;
+            border-radius: 10%;
+            box-shadow: 2px 2px 10px;
+        } 
+        .rowproduct2{
+              display:inline-flex;
+              margin-bottom: 50px;
+        }
+    </style>
+</head>
 <body>
     <header>
     <div class="d1">
@@ -29,20 +151,9 @@
         <div class="d2">
             <h2>HIGH LEVEL GADGETS</h2>
         </div>
-   
-        <!-- about -->
-<div data-aos="fade-right">
-    <div class="d3">
-        <div class="d4">
-        <img class="bmw" src="./store.jpg" alt="">
-        </div>
-        <p class="abt">ABOUT <br> STORE</p>
-        <p class="pas">Consectetur adipiscing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad <br> minim veniam, quis nostrud exercitationconsectetur <br> adipiscing elit, sed do eiusmod tempor incididunt ut  <br>labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation</p>
-    </div>
-    </div>
 
-    <!-- product -->
-    <div class="d5"><h1>PRODUCT</h1></div>
+        <!-- product -->
+          <div class="d5"><h1>PRODUCT</h1></div>
 
     <div data-aos="zoom-in" class="product">
     <div class="d6">
@@ -52,7 +163,7 @@
     <p>Spoiler</p>
      <button class="button1" id="b1" onclick="minus()">-</button>
      <input id="a1" type="number" value="1" style="text-align: center;">
-        <button class="button2" id="b2" onclick="plus()">+</button> <br><br>
+        <button class="button2" id="b2" onclick="plus()">+</button>
         <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">$100</div>
   </div>
 </div>
@@ -126,29 +237,9 @@
 </div>
     </div>  
     </div>
-<!-- contact -->
-
-     <div class="div17">
-        <p class="footer"><b>G17</b> Garage</p>
-
-
-        <div class="div18">
-            <p class="personal">123 456 7890 <br><br>info@mysite.com <br><br>500 Terry Francine Street,<br>San Francisco, CA 94158 <br><br><br><br><br><br><br><br><br>
-            <a class="privacy" href="#">Privacy Policy</a>
-            <a class="statement" href="#">Accessibility Statement</a></p>
-
-            <div class="div19">
-                <p class="apps">Insstagram <br><br>facebook <br><br>linkdin <br><br>X <br><br><br><br><br><br><br><br>© 2035 by G17 garage. Powered and secured by tuning</p>
-            </div>
-        </div>
-    </div>
- 
-
 </body>
-
 <script>
-
-  AOS.init();   
+    AOS.init();   
 
    function minus(){
         var value=document.getElementById(a1);
@@ -201,8 +292,5 @@
         var value=document.getElementById(a6);
         a6.value=Number(a6.value)+1;
     } 
-
-
 </script>
-
 </html>
