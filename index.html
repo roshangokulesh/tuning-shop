@@ -44,7 +44,7 @@
         </div>
     </div>
 
-    <!-- product -->
+   <!-- product -->
     <div class="d5">
         <h1>PRODUCT</h1>
     </div>
@@ -56,9 +56,10 @@
                 <div class="card-body">
                     <p>Spoiler</p>
                     <button class="button1" id="b1" onclick="minus()">-</button>
-                    <input id="a1" type="number" value="1" style="text-align: center;">
-                    <button class="button2" id="b2" onclick="plus()">+</button> <br><br>
-                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">$100
+                     <span id="quantity">1</span>
+                    <button class="button2" id="b2" onclick="plus()">+</button>
+                    <div id="v1" style="border: 1px dotted black; border-radius: 10px; padding: 12px 0px;margin: 5px 70px;">
+                        <h6 id="ha" style="font-size: larger;">$100</h6>
                     </div>
                 </div>
             </div>
@@ -70,9 +71,10 @@
                 <div class="card-body">
                     <p>Diffuser</p>
                     <button class="button1" id="b1" onclick="minus1()">-</button>
-                    <input id="a2" type="number" value="1" style="text-align: center;">
+                     <span id="quantity1">1</span>
                     <button class="button2" id="b2" onclick="plus1()">+</button>
-                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">$100
+                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">
+                         <h6 id="hb" style="font-size: larger;">$100</h6>
                     </div>
                 </div>
             </div>
@@ -84,9 +86,10 @@
                 <div class="card-body">
                     <p>steering</p>
                     <button class="button1" id="b1" onclick="minus2()">-</button>
-                    <input id="a3" type="number" value="1" style="text-align: center;">
+                     <span id="quantity2">1</span>
                     <button class="button2" id="b2" onclick="plus2()">+</button>
-                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">$100
+                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">
+                         <h6 id="hc" style="font-size: larger;">$100</h6>
                     </div>
                 </div>
             </div>
@@ -101,9 +104,10 @@
                 <div class="card-body">
                     <p>Exhauster</p>
                     <button class="button1" id="b1" onclick="minus3()">-</button>
-                    <input id="a4" type="number" value="1" style="text-align: center;">
+                    <span id="quantity3">1</span>
                     <button class="button2" id="b2" onclick="plus3()">+</button>
-                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">$100
+                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">
+                        <h6 id="hd" style="font-size: larger;">$100</h6>
                     </div>
                 </div>
             </div>
@@ -115,9 +119,10 @@
                 <div class="card-body">
                     <p>Wrap</p>
                     <button class="button1" id="b1" onclick="minus4()">-</button>
-                    <input id="a5" type="number" value="1" style="text-align: center;">
+                    <span id="quantity4">1</span>
                     <button class="button2" id="b2" onclick="plus4()">+</button>
-                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">$100
+                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">
+                        <h6 id="he" style="font-size: larger;">$100</h6>
                     </div>
                 </div>
             </div>
@@ -129,9 +134,10 @@
                 <div class="card-body">
                     <p>Tint</p>
                     <button class="button1" id="b1" onclick="minus5()">-</button>
-                    <input id="a6" type="number" value="1" style="text-align: center;">
+                    <span id="quantity5">1</span>
                     <button class="button2" id="b2" onclick="plus5()">+</button>
-                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">$100
+                    <div style="border: 1px dotted black; border-radius: 10px; padding: 10px 0px;margin: 5px 70px;">
+                        <h6 id="hf" style="font-size: larger;">$100</h6>
                     </div>
                 </div>
             </div>
@@ -164,57 +170,138 @@
 
     AOS.init();
 
-    function minus() {
-        var value = document.getElementById(a1);
-        a1.value = Number(a1.value) - 1;
+    let quantity = 1;
+    let quantity1 = 1;
+    let quantity2 = 1;
+    let quantity3 = 1;
+    let quantity4 = 1;
+    let quantity5 = 1;
+
+const unitPrice = 100;
+
+function plus() {
+    quantity++;
+
+    document.getElementById("quantity").innerText = quantity;
+
+    let total = unitPrice * quantity;
+
+    document.getElementById("ha").innerText ="$ "+ total;
+}
+function minus() {
+    if (quantity > 1) {
+        quantity--;
+
+        document.getElementById("quantity").innerText = quantity;
+
+        let total = unitPrice * quantity;
+
+        document.getElementById("ha").innerText = "$ "+ total;
     }
-    function plus() {
-        var value = document.getElementById(a1);
-        a1.value = Number(a1.value) + 1;
-    }
+}
     function minus1() {
-        var value = document.getElementById(a2);
-        a2.value = Number(a2.value) - 1;
+    if (quantity1 > 1) {
+        quantity1--;
+
+        document.getElementById("quantity1").innerText = quantity1;
+
+        let total = unitPrice * quantity1;
+
+        document.getElementById("hb").innerText = "$ "+ total;
     }
+}
     function plus1() {
-        var value = document.getElementById(a2);
-        a2.value = Number(a2.value) + 1;
+    quantity1++;
+
+    document.getElementById("quantity1").innerText = quantity1;
+
+    let total = unitPrice * quantity1;
+
+    document.getElementById("hb").innerText ="$ "+ total;
+}
+    function minus2()  {
+    if (quantity2 > 1) {
+        quantity2--;
+
+        document.getElementById("quantity2").innerText = quantity2;
+
+        let total = unitPrice * quantity2;
+
+        document.getElementById("hc").innerText = "$ "+ total;
     }
-    function minus2() {
-        var value = document.getElementById(a3);
-        a3.value = Number(a3.value) - 1;
-    }
+}
     function plus2() {
-        var value = document.getElementById(a3);
-        a3.value = Number(a3.value) + 1;
-    }
+    quantity2++;
+
+    document.getElementById("quantity2").innerText = quantity2;
+
+    let total = unitPrice * quantity2;
+
+    document.getElementById("hc").innerText ="$ "+ total;
+}
     // div7
     function minus3() {
-        var value = document.getElementById(a4);
-        a4.value = Number(a4.value) - 1;
+    if (quantity3 > 1) {
+        quantity3--;
+
+        document.getElementById("quantity3").innerText = quantity3;
+
+        let total = unitPrice * quantity3;
+
+        document.getElementById("hd").innerText = "$ "+ total;
     }
+}
     function plus3() {
-        var value = document.getElementById(a4);
-        a4.value = Number(a4.value) + 1;
-    }
+    quantity3++;
+
+    document.getElementById("quantity3").innerText = quantity3;
+
+    let total = unitPrice * quantity3;
+
+    document.getElementById("hd").innerText ="$ "+ total;
+}
     // 5thpr
     function minus4() {
-        var value = document.getElementById(a5);
-        a5.value = Number(a5.value) - 1;
+    if (quantity4 > 1) {
+        quantity4--;
+
+        document.getElementById("quantity4").innerText = quantity4;
+
+        let total = unitPrice * quantity4;
+
+        document.getElementById("he").innerText = "$ "+ total;
     }
+}
     function plus4() {
-        var value = document.getElementById(a5);
-        a5.value = Number(a5.value) + 1;
-    }
+    quantity4++;
+
+    document.getElementById("quantity4").innerText = quantity4;
+
+    let total = unitPrice * quantity4;
+
+    document.getElementById("he").innerText ="$ "+ total;
+}
     // 6thpr
     function minus5() {
-        var value = document.getElementById(a6);
-        a6.value = Number(a6.value) - 1;
+    if (quantity5 > 1) {
+        quantity5--;
+
+        document.getElementById("quantity5").innerText = quantity5;
+
+        let total = unitPrice * quantity5;
+
+        document.getElementById("hf").innerText = "$ "+ total;
     }
+}
     function plus5() {
-        var value = document.getElementById(a6);
-        a6.value = Number(a6.value) + 1;
-    }
+    quantity5++;
+
+    document.getElementById("quantity5").innerText = quantity5;
+
+    let total = unitPrice * quantity5;
+
+    document.getElementById("hf").innerText ="$ "+ total;
+}
 
 
 </script>
