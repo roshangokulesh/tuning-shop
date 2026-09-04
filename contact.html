@@ -5,143 +5,470 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        @import url('https://fonts.cdnfonts.com/css/winob');
-        @import url('https://fonts.cdnfonts.com/css/base45');
+        ```css
+@import url('https://fonts.cdnfonts.com/css/winob');
+@import url('https://fonts.cdnfonts.com/css/base45');
 
 
-        * {
-            margin: 0px 0px;
-            padding: 0px;
+/* =========================
+   GLOBAL
+========================= */
 
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-            background-image: url("./Car-engine-modifications.jpg");
-            background-repeat: no-repeat;
-            background-size: 1225px 600px;
-        }
+body {
+    width: 100%;
+    min-height: 100vh;
 
-        .d1 {
-            background-color: rgba(14, 13, 13, 0.483);
-            color: rgb(255, 1, 1);
-            box-shadow: 5px 5px 20px;
-            height: 70px;
-            margin: 10px 10px;
-            width: 900px;
-            border-radius: 45px;
-            transition-property: width, margin-left;
-            transition-duration: 0.6s;
-            margin-left: 150px;
+    background-image: url("./Car-engine-modifications.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
 
-        }
-
-        .d1:hover {
-            width: 1050px;
-            margin-left: 90px;
-        }
-
-        ul {
-            display: flex;
-            padding-top: 20px;
-            list-style: none;
-            justify-content: space-between;
-            font-size: x-large;
-            text-shadow: 2px 2px 13px white;
-        }
-
-        .space {
-            margin-left: 400px;
-        }
-
-        .spacer {
-            margin-right: 20px;
-        }
-
-        .g17 {
-            text-shadow: none;
-            font-size: 180%;
-            font-weight: 1000;
-            font-family: fantasy;
-            margin-left: 40px;
-        }
-
-        a {
-            color: white;
-            text-decoration-line: none;
-
-        }
-
-        a:hover {
-            color: red;
-            transition: 0.5s;
-        }
-
-        .g17:hover {
-            color: white;
-        }
-
-        h2 {
-            color: rgb(253, 252, 252);
-            margin: 400px 280px;
-            font-size: xxx-large;
-            font-family: 'winob', sans-serif;
+    overflow-x: hidden;
+}
 
 
-        }
+/* =========================
+   NAVBAR
+========================= */
 
-        /* contact */
-        .div17 {
-            margin-top: -336px;
-            background-color: rgba(255, 1, 1, 0.782);
-            width: 1219px;
-            height: 480px;
-        }
+.d1 {
+    background-color: rgba(14, 13, 13, 0.483);
+    color: rgb(255, 1, 1);
 
-        .footer {
-            color: orange;
-            padding-left: 20px;
-            padding-top: 430px;
-            font-size: xx-large;
-        }
+    box-shadow: 5px 5px 20px;
 
-        .div18 {
-            display: flex;
-            font-family: 'Chelsea', sans-serif;
+    width: calc(100% - 40px);
+    max-width: 1050px;
 
-        }
+    min-height: 70px;
 
-        .personal {
-            margin-left: 400px;
-            margin-top: -320px;
-            color: white;
-        }
+    margin: 10px auto;
 
-        .privacy {
-            padding: 0px;
-            border: none;
-            color: white;
+    border-radius: 45px;
 
-        }
+    transition: 0.6s ease;
+}
 
-        .statement {
-            padding-left: 50px;
-            border: none;
-            color: white;
-        }
+.d1:hover {
+    width: calc(100% - 30px);
+    max-width: 1100px;
+}
 
-        .div19 {
-            display: flex;
-            font-family: 'Chelsea', sans-serif;
 
-        }
+ul {
+    display: flex;
 
-        .apps {
-            margin-left: 100px;
-            margin-top: -320px;
-            color: white;
-        }
+    width: 100%;
+    min-height: 70px;
+
+    padding: 15px 25px;
+
+    list-style: none;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: clamp(18px, 2vw, 25px);
+
+    text-shadow: 2px 2px 13px white;
+}
+
+
+.space {
+    margin-left: 0;
+}
+
+.spacer {
+    margin-right: 0;
+}
+
+
+.g17 {
+    text-shadow: none;
+
+    font-size: clamp(28px, 3vw, 45px);
+
+    font-weight: 1000;
+
+    font-family: fantasy;
+
+    margin-left: 0;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+
+    transition: 0.5s;
+}
+
+a:hover {
+    color: red;
+}
+
+.g17:hover {
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.d2 {
+    width: 100%;
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+
+h2 {
+    color: rgb(253, 252, 252);
+
+    margin: 0;
+
+    text-align: center;
+
+    font-size: clamp(35px, 5vw, 65px);
+
+    font-family: 'winob', sans-serif;
+
+    text-shadow: 3px 3px 15px black;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.div17 {
+    width: 100%;
+
+    min-height: 480px;
+
+    margin-top: 0;
+
+    padding: 45px 6% 30px;
+
+    background-color: rgba(255, 1, 1, 0.782);
+
+    position: relative;
+}
+
+
+/* =========================
+   G17 GARAGE TITLE
+========================= */
+
+.footer {
+    color: orange;
+
+    padding: 0;
+
+    font-size: clamp(28px, 4vw, 40px);
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   CONTACT CONTENT
+========================= */
+
+.div18 {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    font-family: 'Chelsea', sans-serif;
+}
+
+
+/* =========================
+   PERSONAL DETAILS
+========================= */
+
+.personal {
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(16px, 1.5vw, 20px);
+
+    line-height: 1.6;
+}
+
+
+.privacy {
+    padding: 0;
+
+    border: none;
+
+    color: white;
+
+    margin-right: 30px;
+}
+
+
+.statement {
+    padding: 0;
+
+    border: none;
+
+    color: white;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+.div19 {
+    display: block;
+
+    font-family: 'Chelsea', sans-serif;
+}
+
+
+.apps {
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(16px, 1.5vw, 20px);
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .d1 {
+        width: calc(100% - 30px);
+
+        border-radius: 35px;
+    }
+
+
+    ul {
+        gap: 12px;
+
+        padding: 15px 20px;
+
+        font-size: clamp(16px, 2.5vw, 21px);
+    }
+
+
+    .g17 {
+        font-size: 32px;
+    }
+
+
+    .d2 {
+        min-height: 420px;
+    }
+
+
+    .div17 {
+        padding: 40px 5%;
+    }
+
+
+    .div18 {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 30px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        background-attachment: scroll;
+
+        background-position: center top;
+    }
+
+
+    /* Navbar */
+
+    .d1 {
+        width: calc(100% - 20px);
+
+        min-height: auto;
+
+        margin: 10px auto;
+
+        border-radius: 25px;
+    }
+
+
+    ul {
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 12px;
+
+        padding: 18px;
+    }
+
+
+    .g17 {
+        font-size: 35px;
+    }
+
+
+    /* Hero */
+
+    .d2 {
+        min-height: 350px;
+
+        padding: 30px 15px;
+    }
+
+
+    h2 {
+        font-size: clamp(30px, 9vw, 45px);
+    }
+
+
+    /* Contact */
+
+    .div17 {
+        min-height: auto;
+
+        padding: 35px 25px 30px;
+    }
+
+
+    .footer {
+        font-size: 32px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .div18 {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .personal,
+    .apps {
+        font-size: 17px;
+
+        line-height: 1.7;
+    }
+
+
+    .privacy,
+    .statement {
+        display: block;
+
+        margin: 10px 0;
+    }
+
+
+    .div19 {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .d1 {
+        width: calc(100% - 15px);
+    }
+
+
+    ul {
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+
+    .g17 {
+        font-size: 30px;
+    }
+
+
+    .d2 {
+        min-height: 300px;
+    }
+
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    .div17 {
+        padding: 30px 20px;
+    }
+
+
+    .footer {
+        font-size: 28px;
+    }
+
+
+    .personal,
+    .apps {
+        font-size: 15px;
+    }
+}
+
+
     </style>
 </head>
 

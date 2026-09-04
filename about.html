@@ -10,149 +10,644 @@
     <link href="https://fonts.cdnfonts.com/css/base45" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        @import url('https://fonts.cdnfonts.com/css/winob');
-        @import url('https://fonts.cdnfonts.com/css/base45');
+    
+@import url('https://fonts.cdnfonts.com/css/winob');
+@import url('https://fonts.cdnfonts.com/css/base45');
 
 
-        * {
-            margin: 0px 0px;
-            padding: 0px;
+/* =====================================================
+   GLOBAL
+   ===================================================== */
 
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* header  navbar */
-        body {
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-            background-image: url("./Car-engine-modifications.jpg");
-            background-repeat: no-repeat;
-            background-size: 1225px 600px;
-        }
+body {
+    width: 100%;
+    min-height: 100vh;
 
-        .d1 {
-            background-color: rgba(14, 13, 13, 0.483);
-            color: rgb(255, 1, 1);
-            box-shadow: 5px 5px 20px;
-            height: 70px;
-            margin: 10px 10px;
-            width: 900px;
-            border-radius: 45px;
-            transition-property: width, margin-left;
-            transition-duration: 0.6s;
-            margin-left: 150px;
+    background-image: url("./Car-engine-modifications.jpg");
+    background-repeat: no-repeat;
 
-        }
+    /* Responsive background */
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
 
-        .d1:hover {
-            width: 1050px;
-            margin-left: 90px;
-        }
-
-        ul {
-            display: flex;
-            padding-top: 20px;
-            list-style: none;
-            justify-content: space-between;
-            font-size: x-large;
-            text-shadow: 2px 2px 13px white;
-        }
-
-        .space {
-            margin-left: 400px;
-        }
-
-        .spacer {
-            margin-right: 20px;
-        }
-
-        .g17 {
-            text-shadow: none;
-            font-size: 180%;
-            font-weight: 1000;
-            font-family: fantasy;
-            margin-left: 40px;
-        }
-
-        a {
-            color: white;
-            text-decoration-line: none;
-
-        }
-
-        a:hover {
-            color: red;
-            transition: 0.5s;
-        }
-
-        .g17:hover {
-            color: white;
-        }
-
-        h2 {
-            color: rgb(253, 252, 252);
-            margin: 400px 280px;
-            font-size: xxx-large;
-            font-family: 'winob', sans-serif;
+    overflow-x: hidden;
+}
 
 
-        }
+/* =====================================================
+   HEADER / NAVBAR
+   ===================================================== */
 
-        .abt {
-            margin-top: -350px;
-            padding-left: 600px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-decoration: 5px underline;
-            font-size: 500%;
-            color: red;
+.d1 {
+    background-color: rgba(14, 13, 13, 0.483);
 
-        }
+    color: rgb(255, 1, 1);
 
-        .d3 {
-            position: relative;
-            height: 400px;
-            width: 1219px;
-            background-color: white;
-            margin-top: 500px;
-            margin-bottom: 100px;
-        }
+    box-shadow: 5px 5px 20px;
 
-        .pas {
-            margin-left: 610px;
-            margin-top: 30px;
-            font-size: large;
-            font-weight: lighter;
-        }
+    width: calc(100% - 40px);
+    max-width: 1050px;
 
-        .bmw {
-            display: flex;
-            margin-left: 0px;
-            margin-top: 0px;
-            height: 350px;
-            width: 300px;
-            transition-property: width, height;
-            transition-duration: 0.5s;
+    min-height: 70px;
 
-        }
+    margin: 10px auto;
 
-        .d4 {
-            position: absolute;
-            box-shadow: 12px 15px 25px rgba(245, 8, 8, 0.667);
-            width: 300px;
-            margin-left: 190px;
-            transition-property: box-shadow;
-            transition-duration: 0.5s;
+    border-radius: 45px;
 
-        }
+    transition:
+        width 0.6s ease,
+        transform 0.6s ease;
+}
 
-        .d4:hover {
-            box-shadow: 55px 23px 25px rgba(245, 8, 8, 0.667);
-        }
 
-        .bmw:hover {
-            width: 350px;
-            height: 400px;
+/* Navbar hover */
 
-        }
+.d1:hover {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+
+    transform: scale(1.01);
+}
+
+
+ul {
+    display: flex;
+
+    width: 100%;
+    min-height: 70px;
+
+    padding: 0 25px;
+
+    list-style: none;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    font-size: clamp(16px, 2vw, 24px);
+
+    text-shadow: 2px 2px 13px white;
+}
+
+
+/* Removed fixed 400px margin */
+
+.space {
+    margin-left: 0;
+}
+
+
+/* Removed fixed 20px margin */
+
+.spacer {
+    margin-right: 0;
+}
+
+
+.g17 {
+    text-shadow: none;
+
+    font-size: clamp(28px, 3vw, 42px);
+
+    font-weight: 1000;
+
+    font-family: fantasy;
+
+    margin-left: 0;
+}
+
+
+a {
+    color: white;
+
+    text-decoration: none;
+
+    transition: color 0.5s ease;
+}
+
+
+a:hover {
+    color: red;
+}
+
+
+.g17:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
+
+.d2 {
+    width: 100%;
+
+    min-height: 500px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 20px 50px;
+}
+
+
+h2 {
+    width: 100%;
+
+    color: rgb(253, 252, 252);
+
+    margin: 0;
+
+    text-align: center;
+
+    font-size: clamp(35px, 6vw, 75px);
+
+    font-family: 'winob', sans-serif;
+
+    text-shadow: 3px 3px 15px black;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+   ===================================================== */
+
+.d3 {
+    position: relative;
+
+    width: min(1219px, 95%);
+
+    min-height: 400px;
+
+    height: auto;
+
+    background-color: white;
+
+    margin: 100px auto;
+
+    padding: 40px;
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    grid-template-rows: auto auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   STORE IMAGE CONTAINER
+   ===================================================== */
+
+.d4 {
+    position: relative;
+
+    width: 100%;
+    max-width: 350px;
+
+    margin: 0 auto;
+
+    box-shadow:
+        12px 15px 25px rgba(245, 8, 8, 0.667);
+
+    transition: box-shadow 0.5s ease;
+
+    grid-row: 1 / 3;
+
+    align-self: center;
+}
+
+
+.d4:hover {
+    box-shadow:
+        30px 20px 25px rgba(245, 8, 8, 0.667);
+}
+
+
+/* =====================================================
+   STORE IMAGE
+   ===================================================== */
+
+.bmw {
+    display: block;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    max-width: 350px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* Image hover */
+
+.bmw:hover {
+    width: 100% !important;
+
+    height: auto !important;
+
+    transform: scale(1.05);
+}
+
+
+/* =====================================================
+   ABOUT TITLE
+   ===================================================== */
+
+.abt {
+    margin: 0;
+
+    padding: 0;
+
+    font-family:
+        'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+
+    text-decoration: 5px underline;
+
+    font-size: clamp(40px, 5vw, 75px);
+
+    line-height: 1.1;
+
+    color: red;
+}
+
+
+/* =====================================================
+   ABOUT PARAGRAPH
+   ===================================================== */
+
+.pas {
+    margin: 0;
+
+    font-size: clamp(15px, 1.5vw, 19px);
+
+    font-weight: lighter;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   LARGE DESKTOP
+   ===================================================== */
+
+@media (min-width: 1200px) {
+
+    .d3 {
+        grid-template-columns: 40% 60%;
+        padding: 50px;
+    }
+
+    .d4 {
+        max-width: 350px;
+    }
+
+    .abt {
+        font-size: 70px;
+    }
+}
+
+
+/* =====================================================
+   LAPTOP
+   ===================================================== */
+
+@media (max-width: 1199px) {
+
+    .d1 {
+        width: calc(100% - 30px);
+    }
+
+    .d3 {
+        width: 94%;
+
+        grid-template-columns: 40% 60%;
+
+        padding: 35px;
+    }
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    /* Navbar */
+
+    .d1 {
+        width: calc(100% - 30px);
+
+        border-radius: 30px;
+    }
+
+    ul {
+        font-size: 18px;
+
+        gap: 15px;
+
+        padding: 0 18px;
+    }
+
+    .g17 {
+        font-size: 32px;
+    }
+
+
+    /* Hero */
+
+    .d2 {
+        min-height: 450px;
+
+        padding-top: 80px;
+    }
+
+    h2 {
+        font-size: clamp(35px, 7vw, 60px);
+    }
+
+
+    /* About */
+
+    .d3 {
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+
+        text-align: center;
+
+        padding: 35px 25px;
+
+        gap: 30px;
+    }
+
+
+    .d4 {
+        grid-row: auto;
+
+        width: 80%;
+
+        max-width: 350px;
+
+        margin: 0 auto;
+    }
+
+
+    .abt {
+        font-size: clamp(40px, 8vw, 60px);
+    }
+
+
+    .pas {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        background-size: cover;
+
+        background-position: center;
+
+        background-attachment: scroll;
+    }
+
+
+    /* ---------------------------------------------
+       NAVBAR
+       --------------------------------------------- */
+
+    .d1 {
+        width: calc(100% - 20px);
+
+        min-height: auto;
+
+        padding: 10px 0;
+
+        border-radius: 25px;
+    }
+
+
+    .d1:hover {
+        width: calc(100% - 20px);
+
+        transform: none;
+    }
+
+
+    ul {
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        min-height: auto;
+
+        padding: 10px;
+
+        gap: 12px;
+
+        font-size: 18px;
+    }
+
+
+    .g17 {
+        margin: 0;
+
+        font-size: 32px;
+    }
+
+
+    .space,
+    .spacer {
+        margin: 0;
+    }
+
+
+    /* ---------------------------------------------
+       HERO
+       --------------------------------------------- */
+
+    .d2 {
+        min-height: 400px;
+
+        padding: 70px 15px 40px;
+    }
+
+
+    h2 {
+        width: 100%;
+
+        font-size: clamp(30px, 10vw, 50px);
+
+        line-height: 1.2;
+    }
+
+
+    /* ---------------------------------------------
+       ABOUT
+       --------------------------------------------- */
+
+    .d3 {
+        width: 94%;
+
+        margin: 60px auto;
+
+        padding: 25px 15px;
+
+        gap: 25px;
+    }
+
+
+    .d4 {
+        width: 85%;
+
+        max-width: 300px;
+    }
+
+
+    .bmw {
+        width: 100% !important;
+
+        height: auto !important;
+
+        max-width: 300px;
+    }
+
+
+    .bmw:hover {
+        width: 100% !important;
+
+        transform: scale(1.03);
+    }
+
+
+    .abt {
+        font-size: clamp(35px, 12vw, 55px);
+
+        line-height: 1.1;
+    }
+
+
+    .pas {
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* Remove unwanted <br> spacing effect */
+
+    .pas br {
+        display: none;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .d1 {
+        width: calc(100% - 15px);
+    }
+
+
+    ul {
+        font-size: 16px;
+
+        gap: 10px;
+    }
+
+
+    .g17 {
+        font-size: 28px;
+    }
+
+
+    .d2 {
+        min-height: 350px;
+    }
+
+
+    h2 {
+        font-size: 32px;
+    }
+
+
+    .d3 {
+        width: 94%;
+
+        padding: 20px 12px;
+    }
+
+
+    .d4 {
+        width: 90%;
+    }
+
+
+    .abt {
+        font-size: 38px;
+    }
+
+
+    .pas {
+        font-size: 14px;
+    }
+}
+
+
     </style>
 </head>
 

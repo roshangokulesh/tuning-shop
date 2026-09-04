@@ -1,215 +1,1140 @@
- @import url('https://fonts.cdnfonts.com/css/winob');
- @import url('https://fonts.cdnfonts.com/css/base45');
- 
- 
- * {
-            margin: 0px 0px;
-            padding: 0px;
+@import url('https://fonts.cdnfonts.com/css/winob');
+@import url('https://fonts.cdnfonts.com/css/base45');
 
-        }
 
-        body {
-           
-            background-image: url("./Car-engine-modifications.jpg");
-            background-repeat: no-repeat;
-            background-size: 1225px 600px;
-        }
-        
-        .d1 {
-            background-color: rgba(14, 13, 13, 0.483);
-            color: rgb(255, 1, 1);
-            box-shadow: 5px 5px 20px;
-            height: 70px;
-            margin: 10px 10px;
-            width: 900px;
-            border-radius: 45px;
-            transition-property: width,margin-left;
-            transition-duration: 0.6s;
-            margin-left: 150px;
+/* =====================================================
+   GLOBAL
+   ===================================================== */
 
-        }
-        .d1:hover{
-            width:1050px ;
-            margin-left: 90px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        ul {
-            display: flex;
-            padding-top: 20px;
-            list-style: none;
-            justify-content: space-between;
-            font-size: x-large;
-            text-shadow: 2px 2px 13px white;
-        }
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 
-        .space {
-            margin-left: 400px;
-        }
+body {
+    width: 100%;
+    min-height: 100vh;
 
-        .spacer {
-            margin-right: 20px;
-        }
+    background-image: url("./Car-engine-modifications.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
 
-        .g17 {
-            text-shadow: none;
-            font-size: 180%;
-            font-weight: 1000;
-            font-family: fantasy;
-            margin-left: 40px;
-        }
+    overflow-x: hidden;
+}
 
-        a {
-            color: white;
-            text-decoration-line: none;
 
-        }
+/* =====================================================
+   NAVBAR
+   ===================================================== */
 
-        a:hover {
-            color: red;
-            transition: 0.5s;
-        }
+.d1 {
+    background-color: rgba(14, 13, 13, 0.483);
+    color: rgb(255, 1, 1);
 
-        .g17:hover {
-            color: white;
-        }
+    box-shadow: 5px 5px 20px;
 
-        h2 {
-            color: rgb(253, 252, 252);
-            margin: 400px 280px;
-            font-size: xxx-large;
-            font-family: 'winob', sans-serif;
-                                                
+    min-height: 70px;
+    width: calc(100% - 40px);
+    max-width: 1050px;
 
-        }
+    margin: 10px auto;
 
-        .abt {
-            margin-top: -350px;
-            padding-left: 600px;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-decoration:  5px underline;
-            font-size: 500%;
-            color: red;
+    border-radius: 45px;
 
-        }
+    transition:
+        width 0.6s ease,
+        transform 0.6s ease;
+}
 
-        .d3 {
-            height: 400px;
-            width: 1219px;
-            background-color:white;
-            margin-top: 500px;
-            margin-bottom: 100px;
-        }
-        .pas{
-            margin-left: 610px;
-            margin-top: 30px;
-            font-size: large;
-            font-weight: lighter;
-        }
-        .bmw{
-            display: flex;
-            margin-left: 0px;
-            margin-top: -250px;
-            height:350px;
-            width:300px;
-            transition-property:width,height ;
-            transition-duration: 0.5s;
-           
-        }
-        .d4{
-           box-shadow: 12px 15px 25px rgba(245, 8, 8, 0.667);
-           width: 300px;
-           margin-left: 190px;
-           transition-property: box-shadow;
-           transition-duration: 0.5s;
-        
-        }
-        .d4:hover{
-            box-shadow:  55px 23px 25px rgba(245, 8, 8, 0.667) ;
-        }
-        .bmw:hover{
-            width:350px;
-            height:400px;
-            
-        }
-        .d5{
-            padding:70px 520px;
-            font-family: 'Base45', sans-serif;
-                                                
-        }
-        .d6{
-            margin-left: 70px;
-            border: 5px solid rgba(0, 0, 0, 0.289);
-            width: 290px;
-            text-align: center;
-            align-items: center;
-            padding: 30px 10px;
-            border-radius: 10%;
-            box-shadow: 2px 2px 10px;
-        } 
-        .button1{
-            padding: 5px 5px;
-        }
-        .button2{
-            padding: 5px 5px;
-        }
-        .product{
-            display:inline-flex;
-        }
-         .d7{
-            margin-top: 50px;
-            margin-left: 70px;
-            border: 5px solid rgba(0, 0, 0, 0.289);
-            width: 290px;
-            text-align: center;
-            align-items: center;
-            padding: 30px 10px;
-            border-radius: 10%;
-            box-shadow: 2px 2px 10px;
-        } 
-        .rowproduct2{
-              display:inline-flex;
-              margin-bottom: 50px;
-        }
-        /* contact */
-         .div17{
-           background-color: rgba(255, 1, 1, 0.782);
-            width: 1219px;
-            height: 480px;
-        }
-        .footer{
-            color:orange;
-            padding-left: 20px;
-            padding-top: 430px;
-            font-size: xx-large;
-        }
-        .div18{
-            display: flex;
-             font-family: 'Chelsea', sans-serif;
-            
-        }
-        .personal{
-            margin-left: 400px;
-            margin-top: -320px;
-            color: white;
-        }
-        .privacy{
-            padding: 0px;
-            border: none;
-            color: white;
-            
-        }
-        .statement{
-            padding-left:50px;
-            border: none;
-            color: white;   
-        }
-        .div19{
-            display: flex;
-             font-family: 'Chelsea', sans-serif;
-            
-        }
-        .apps{
-            margin-left: 100px;
-            margin-top: -320px;
-            color: white;
-        }
+
+/* Desktop hover */
+
+.d1:hover {
+    width: calc(100% - 40px);
+    max-width: 1100px;
+    transform: scale(1.01);
+}
+
+
+ul {
+    display: flex;
+
+    width: 100%;
+
+    min-height: 70px;
+
+    padding: 0 25px;
+
+    list-style: none;
+
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: clamp(16px, 2vw, 24px);
+
+    text-shadow: 2px 2px 13px white;
+
+    gap: 20px;
+}
+
+
+.space {
+    margin-left: 0;
+}
+
+
+.spacer {
+    margin-right: 0;
+}
+
+
+.g17 {
+    text-shadow: none;
+
+    font-size: clamp(28px, 3vw, 42px);
+
+    font-weight: 1000;
+
+    font-family: fantasy;
+
+    margin-left: 0;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+
+    transition: color 0.5s ease;
+}
+
+
+a:hover {
+    color: red;
+}
+
+
+.g17:hover {
+    color: white;
+}
+
+
+/* =====================================================
+   HERO SECTION
+   ===================================================== */
+
+.d2 {
+    width: 100%;
+
+    min-height: 500px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 20px 50px;
+}
+
+
+h2 {
+    color: rgb(253, 252, 252);
+
+    margin: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: clamp(35px, 6vw, 75px);
+
+    font-family: 'winob', sans-serif;
+
+    text-shadow: 3px 3px 15px black;
+}
+
+
+/* =====================================================
+   ABOUT SECTION
+   ===================================================== */
+
+.d3 {
+    width: min(1219px, 95%);
+
+    min-height: 400px;
+
+    background-color: white;
+
+    margin: 100px auto;
+
+    padding: 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: auto auto;
+
+    align-items: center;
+
+    gap: 30px;
+
+    overflow: hidden;
+}
+
+
+/* Image container */
+
+.d4 {
+    width: 100%;
+    max-width: 350px;
+
+    margin: 0 auto;
+
+    box-shadow:
+        12px 15px 25px rgba(245, 8, 8, 0.667);
+
+    transition: box-shadow 0.5s ease;
+}
+
+
+.d4:hover {
+    box-shadow:
+        25px 20px 25px rgba(245, 8, 8, 0.667);
+}
+
+
+/* BMW / Store image */
+
+.bmw {
+    display: block;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 350px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease,
+        width 0.5s ease;
+}
+
+
+.bmw:hover {
+    width: 100% !important;
+    height: auto !important;
+
+    transform: scale(1.05);
+}
+
+
+/* About heading */
+
+.abt {
+    margin: 0;
+
+    padding: 0;
+
+    font-family:
+        'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
+
+    text-decoration: 5px underline;
+
+    font-size: clamp(40px, 5vw, 75px);
+
+    color: red;
+
+    line-height: 1.1;
+}
+
+
+/* About paragraph */
+
+.pas {
+    margin: 0;
+
+    font-size: clamp(15px, 1.5vw, 19px);
+
+    font-weight: lighter;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   PRODUCT TITLE
+   ===================================================== */
+
+.d5 {
+    width: 100%;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    font-family: 'Base45', sans-serif;
+}
+
+
+.d5 h1 {
+    font-size: clamp(35px, 5vw, 65px);
+}
+
+
+/* =====================================================
+   PRODUCTS
+   ===================================================== */
+
+.product,
+.rowproduct2 {
+
+    width: 100%;
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 0 20px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 40px;
+
+    justify-items: center;
+
+    align-items: start;
+}
+
+
+/* Product cards */
+
+.d6,
+.d7 {
+
+    width: 100%;
+
+    max-width: 320px;
+
+    margin: 0;
+
+    border: 5px solid rgba(0, 0, 0, 0.289);
+
+    text-align: center;
+
+    padding: 20px 10px;
+
+    border-radius: 10%;
+
+    box-shadow: 2px 2px 10px;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+.d6:hover,
+.d7:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 5px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =====================================================
+   BOOTSTRAP CARD FIX
+   ===================================================== */
+
+/*
+   Your HTML has:
+
+   style="width: 18rem;"
+
+   So we override that here.
+*/
+
+.card {
+
+    width: 100% !important;
+
+    max-width: 290px;
+
+    margin: 0 auto;
+}
+
+
+/* Product images */
+
+.card-img-top {
+
+    width: 100% !important;
+
+    height: 250px !important;
+
+    max-width: 100%;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+/* Product name */
+
+.card-body p {
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+
+/* =====================================================
+   QUANTITY BUTTONS
+   ===================================================== */
+
+.button1,
+.button2 {
+
+    padding: 5px 12px;
+
+    min-width: 35px;
+
+    cursor: pointer;
+
+    border: 1px solid #555;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.button1:hover,
+.button2:hover {
+
+    background-color: red;
+
+    color: white;
+}
+
+
+/* Quantity number */
+
+#quantity,
+#quantity1,
+#quantity2,
+#quantity3,
+#quantity4,
+#quantity5 {
+
+    display: inline-block;
+
+    margin: 0 10px;
+
+    font-weight: bold;
+}
+
+
+/* Price box */
+
+#v1,
+.card-body > div {
+
+    max-width: 160px;
+
+    margin: 10px auto !important;
+
+    padding: 10px !important;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   CONTACT / FOOTER
+   ===================================================== */
+
+.div17 {
+
+    width: 100%;
+
+    max-width: 1219px;
+
+    min-height: 480px;
+
+    background-color: rgba(255, 1, 1, 0.782);
+
+    margin: 100px auto 0;
+
+    padding: 40px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.footer {
+
+    color: orange;
+
+    padding: 0;
+
+    margin: 0;
+
+    font-size: clamp(25px, 4vw, 40px);
+}
+
+
+/* =====================================================
+   CONTACT CONTENT
+   ===================================================== */
+
+.div18 {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 40px;
+
+    margin-top: 70px;
+
+    font-family: 'Chelsea', sans-serif;
+}
+
+
+.personal {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(15px, 1.5vw, 18px);
+
+    line-height: 1.5;
+}
+
+
+.privacy {
+
+    padding: 0;
+
+    border: none;
+
+    color: white;
+}
+
+
+.statement {
+
+    padding-left: 30px;
+
+    border: none;
+
+    color: white;
+}
+
+
+/* Social media */
+
+.div19 {
+
+    display: flex;
+
+    font-family: 'Chelsea', sans-serif;
+}
+
+
+.apps {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: clamp(15px, 1.5vw, 18px);
+
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   LARGE LAPTOP / DESKTOP
+   ===================================================== */
+
+@media (min-width: 1200px) {
+
+    .d3 {
+
+        grid-template-columns: 40% 60%;
+
+        padding: 50px;
+    }
+
+    .d4 {
+
+        max-width: 350px;
+    }
+
+    .abt {
+
+        font-size: 70px;
+    }
+
+}
+
+
+/* =====================================================
+   LAPTOP
+   ===================================================== */
+
+@media (max-width: 1199px) {
+
+    .d1 {
+
+        width: calc(100% - 30px);
+    }
+
+
+    .d3 {
+
+        width: 94%;
+
+        padding: 35px;
+
+        grid-template-columns: 40% 60%;
+    }
+
+
+    .product,
+    .rowproduct2 {
+
+        grid-template-columns:
+            repeat(3, minmax(250px, 1fr));
+
+        gap: 25px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 900px) {
+
+    /* Navbar */
+
+    .d1 {
+
+        width: calc(100% - 30px);
+
+        border-radius: 30px;
+    }
+
+
+    ul {
+
+        font-size: 18px;
+
+        gap: 15px;
+
+        padding: 0 18px;
+    }
+
+
+    .g17 {
+
+        font-size: 32px;
+    }
+
+
+    /* Hero */
+
+    .d2 {
+
+        min-height: 450px;
+
+        padding-top: 80px;
+    }
+
+
+    h2 {
+
+        font-size: clamp(35px, 7vw, 60px);
+    }
+
+
+    /* About */
+
+    .d3 {
+
+        width: 94%;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+
+        text-align: center;
+
+        padding: 35px 25px;
+    }
+
+
+    .d4 {
+
+        order: 1;
+    }
+
+
+    .abt {
+
+        order: 2;
+
+        font-size: clamp(40px, 8vw, 60px);
+    }
+
+
+    .pas {
+
+        order: 3;
+    }
+
+
+    /* Products */
+
+    .product,
+    .rowproduct2 {
+
+        grid-template-columns:
+            repeat(2, minmax(250px, 1fr));
+
+        gap: 30px;
+    }
+
+
+    /* Contact */
+
+    .div17 {
+
+        padding: 35px;
+
+        min-height: 500px;
+    }
+
+
+    .div18 {
+
+        justify-content: space-around;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+
+        background-size: cover;
+
+        background-position: center;
+
+        background-attachment: scroll;
+    }
+
+
+    /* ---------------------------------------------
+       NAVBAR
+       --------------------------------------------- */
+
+    .d1 {
+
+        width: calc(100% - 20px);
+
+        min-height: auto;
+
+        border-radius: 25px;
+
+        padding: 10px 0;
+    }
+
+
+    .d1:hover {
+
+        width: calc(100% - 20px);
+
+        transform: none;
+    }
+
+
+    ul {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        min-height: auto;
+
+        padding: 10px;
+
+        gap: 12px;
+
+        font-size: 18px;
+    }
+
+
+    .g17 {
+
+        margin: 0;
+
+        font-size: 32px;
+    }
+
+
+    .space,
+    .spacer {
+
+        margin: 0;
+    }
+
+
+    /* ---------------------------------------------
+       HERO
+       --------------------------------------------- */
+
+    .d2 {
+
+        min-height: 400px;
+
+        padding: 70px 15px 40px;
+    }
+
+
+    h2 {
+
+        width: 100%;
+
+        font-size: clamp(30px, 10vw, 50px);
+
+        line-height: 1.2;
+    }
+
+
+    /* ---------------------------------------------
+       ABOUT
+       --------------------------------------------- */
+
+    .d3 {
+
+        width: 94%;
+
+        margin: 60px auto;
+
+        padding: 25px 15px;
+
+        gap: 25px;
+    }
+
+
+    .d4 {
+
+        width: 85%;
+
+        max-width: 300px;
+    }
+
+
+    .bmw {
+
+        width: 100% !important;
+
+        height: auto !important;
+    }
+
+
+    .bmw:hover {
+
+        width: 100% !important;
+
+        transform: scale(1.03);
+    }
+
+
+    .abt {
+
+        font-size: clamp(35px, 12vw, 55px);
+
+        line-height: 1.1;
+    }
+
+
+    .pas {
+
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* ---------------------------------------------
+       PRODUCT TITLE
+       --------------------------------------------- */
+
+    .d5 {
+
+        padding: 35px 15px;
+    }
+
+
+    .d5 h1 {
+
+        font-size: 40px;
+    }
+
+
+    /* ---------------------------------------------
+       PRODUCTS
+       --------------------------------------------- */
+
+    .product,
+    .rowproduct2 {
+
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 0 15px;
+    }
+
+
+    .d6,
+    .d7 {
+
+        width: 100%;
+
+        max-width: 320px;
+
+        margin: 0 auto;
+    }
+
+
+    .card {
+
+        width: 100% !important;
+
+        max-width: 280px;
+    }
+
+
+    .card-img-top {
+
+        width: 100% !important;
+
+        height: 230px !important;
+
+        object-fit: cover;
+    }
+
+
+    /* ---------------------------------------------
+       CONTACT
+       --------------------------------------------- */
+
+    .div17 {
+
+        width: 100%;
+
+        min-height: 650px;
+
+        margin-top: 70px;
+
+        padding: 30px 20px;
+    }
+
+
+    .footer {
+
+        font-size: 28px;
+    }
+
+
+    .div18 {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 40px;
+
+        margin-top: 50px;
+    }
+
+
+    .personal,
+    .apps {
+
+        margin: 0;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    .privacy,
+    .statement {
+
+        display: inline-block;
+
+        margin-top: 10px;
+
+        padding: 0 5px;
+    }
+
+
+    .div19 {
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 400px) {
+
+    .d1 {
+
+        width: calc(100% - 15px);
+    }
+
+
+    ul {
+
+        font-size: 16px;
+
+        gap: 10px;
+    }
+
+
+    .g17 {
+
+        font-size: 28px;
+    }
+
+
+    .d2 {
+
+        min-height: 350px;
+    }
+
+
+    h2 {
+
+        font-size: 32px;
+    }
+
+
+    .d3 {
+
+        padding: 20px 12px;
+    }
+
+
+    .abt {
+
+        font-size: 38px;
+    }
+
+
+    .pas {
+
+        font-size: 14px;
+    }
+
+
+    .d5 h1 {
+
+        font-size: 35px;
+    }
+
+
+    .d6,
+    .d7 {
+
+        max-width: 290px;
+    }
+
+
+    .card-img-top {
+
+        height: 210px !important;
+    }
+
+
+    .div17 {
+
+        min-height: 680px;
+
+        padding: 25px 15px;
+    }
+
+
+    .footer {
+
+        font-size: 25px;
+    }
+
+}
