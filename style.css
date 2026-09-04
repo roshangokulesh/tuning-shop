@@ -50,9 +50,8 @@ body {
 
     border-radius: 45px;
 
-    transition:
-        width 0.6s ease,
-        transform 0.6s ease;
+    transition: 0.6s ease,
+        
 }
 
 
@@ -61,7 +60,7 @@ body {
 .d1:hover {
     width: calc(100% - 40px);
     max-width: 1100px;
-    transform: scale(1.01);
+
 }
 
 
